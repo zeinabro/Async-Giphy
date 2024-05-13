@@ -10,7 +10,8 @@ async function getImages(query){
     return url
 }
 
-getImages("dogs")
+async function helperFunction(){
+    await getImages("dogs")
+}
 
-// Print out value of API key stored in .env file
-// console.log(process.env.API_KEY)
+helperFunction()
